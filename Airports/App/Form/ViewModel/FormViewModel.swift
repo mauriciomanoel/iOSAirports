@@ -169,7 +169,7 @@ class FormViewModel {
             self.errorMessageData = "Destination field is null or invalid"
             return
         }
-        
+        self.isLoading = true
         self.repository.searchFlights(flightInput) { (data, error) in
             self.isLoading = false
             if error != nil{

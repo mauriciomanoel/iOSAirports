@@ -21,6 +21,8 @@ class FormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = Resources.titleFormSearch.rawValue
+        
         beforeListeners()
         mainView.setupLayout()
 

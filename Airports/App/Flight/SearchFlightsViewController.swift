@@ -19,6 +19,7 @@ class SearchFlightsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = Resources.titleResultSearch.rawValue
         mainView.setupLayout()
         mainView.updateLabel(flightsResult)
     
