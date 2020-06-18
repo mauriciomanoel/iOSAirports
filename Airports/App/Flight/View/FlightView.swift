@@ -33,9 +33,12 @@ class FlightView: UIView {
         currencyOutput.text = _data.currency
         tripTypeOutput.text = _data.tripType
         upgradeTypeOutput.text = _data.upgradeType
-        self.trips = _data.trips
-        tableViewTrips.reloadData()
-
+        
+        if let _trips = _data.trips {
+            self.trips = _trips
+            tableViewTrips.reloadData()
+        }
+        
     }
     
     private func registerTableViewCells() {

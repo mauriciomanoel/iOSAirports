@@ -10,14 +10,16 @@ import Foundation
 
 // MARK: - FlightsResult
 struct FlightsResult: Codable {
-    let termsOfUse: String
-    let currency: String
-    let currPrecision: Int
-    let routeGroup, tripType, upgradeType: String
-    let trips: [Trip]
-    let serverTimeUTC: String
+    let message: String?
+    let code: String?
+    let termsOfUse: String?
+    let currency: String?
+    let currPrecision: Int?
+    let routeGroup, tripType, upgradeType: String?
+    let trips: [Trip]?
+    let serverTimeUTC: String?
     
-    init(termsOfUse: String = "", currency: String = "", currPrecision: Int = 0, routeGroup: String = "", tripType: String = "", upgradeType: String = "", trips: [Trip] = [], serverTimeUTC: String = "") {
+    init(termsOfUse: String = "", currency: String = "", currPrecision: Int = 0, routeGroup: String = "", tripType: String = "", upgradeType: String = "", trips: [Trip] = [], serverTimeUTC: String = "", message: String = "", code: String = "") {
         
         self.termsOfUse = termsOfUse
         self.currency = currency
@@ -27,6 +29,9 @@ struct FlightsResult: Codable {
         self.upgradeType = upgradeType
         self.trips = trips
         self.serverTimeUTC = serverTimeUTC
+        self.message = message
+        self.code = code
+
     }
 }
 

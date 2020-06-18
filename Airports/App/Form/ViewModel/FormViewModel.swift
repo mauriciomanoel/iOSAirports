@@ -160,6 +160,11 @@ class FormViewModel {
                         return
                     }
                     
+                    if let error = _flightsResult.message  {
+                        self.errorMessageData = error
+                        return
+                    }
+                    
                     self.processFlights(data: _flightsResult)
                 }
             }
