@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import iOSCalculateNetwork
 
 struct NetworkManager{
     

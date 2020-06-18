@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5298827F249B5EFD00CECBD0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298827A249B5EFC00CECBD0 /* HTTPMethod.swift */; };
+		52988280249B5EFD00CECBD0 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298827B249B5EFC00CECBD0 /* HTTPTask.swift */; };
+		52988281249B5EFD00CECBD0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298827C249B5EFC00CECBD0 /* Router.swift */; };
+		52988282249B5EFD00CECBD0 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298827D249B5EFC00CECBD0 /* EndPointType.swift */; };
+		52988283249B5EFD00CECBD0 /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298827E249B5EFD00CECBD0 /* NetworkEnvironment.swift */; };
 		52DA163B249AA8D6005EDC81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA163A249AA8D6005EDC81 /* AppDelegate.swift */; };
 		52DA163F249AA8D6005EDC81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA163E249AA8D6005EDC81 /* ViewController.swift */; };
 		52DA1642249AA8D6005EDC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA1640249AA8D6005EDC81 /* Main.storyboard */; };
 		52DA1644249AA8DC005EDC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA1643249AA8DC005EDC81 /* Assets.xcassets */; };
 		52DA1647249AA8DC005EDC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA1645249AA8DC005EDC81 /* LaunchScreen.storyboard */; };
-		52DA1651249AA93C005EDC81 /* iOSCalculateNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DA164E249AA90D005EDC81 /* iOSCalculateNetwork.framework */; };
-		52DA1652249AA93C005EDC81 /* iOSCalculateNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52DA164E249AA90D005EDC81 /* iOSCalculateNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52DA1656249AAC4E005EDC81 /* ItemWithLabelAndSpinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DA1654249AAC4D005EDC81 /* ItemWithLabelAndSpinner.xib */; };
 		52DA1657249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA1655249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift */; };
 		52DA165E249AAC7F005EDC81 /* ic_calculate_arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DA165B249AAC7F005EDC81 /* ic_calculate_arrow_down.png */; };
@@ -42,21 +45,12 @@
 		52DFFCC6249B102E00D56AD6 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DFFCC4249B102D00D56AD6 /* TripTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		52DA1653249AA93C005EDC81 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				52DA1652249AA93C005EDC81 /* iOSCalculateNetwork.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		5298827A249B5EFC00CECBD0 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5298827B249B5EFC00CECBD0 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		5298827C249B5EFC00CECBD0 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5298827D249B5EFC00CECBD0 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		5298827E249B5EFD00CECBD0 /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
 		52DA1637249AA8D6005EDC81 /* Airports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA163A249AA8D6005EDC81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DA163E249AA8D6005EDC81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +58,6 @@
 		52DA1643249AA8DC005EDC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DA1646249AA8DC005EDC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DA1648249AA8DC005EDC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52DA164E249AA90D005EDC81 /* iOSCalculateNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSCalculateNetwork.framework; sourceTree = "<group>"; };
 		52DA1654249AAC4D005EDC81 /* ItemWithLabelAndSpinner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemWithLabelAndSpinner.xib; sourceTree = "<group>"; };
 		52DA1655249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemWithLabelAndSpinner.swift; sourceTree = "<group>"; };
 		52DA165B249AAC7F005EDC81 /* ic_calculate_arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_calculate_arrow_down.png; sourceTree = "<group>"; };
@@ -98,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DA1651249AA93C005EDC81 /* iOSCalculateNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +102,6 @@
 			children = (
 				52DA1639249AA8D6005EDC81 /* Airports */,
 				52DA1638249AA8D6005EDC81 /* Products */,
-				52DA1650249AA913005EDC81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,14 +130,6 @@
 				52DA168A249ADA57005EDC81 /* Repository */,
 			);
 			path = Airports;
-			sourceTree = "<group>";
-		};
-		52DA1650249AA913005EDC81 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52DA164E249AA90D005EDC81 /* iOSCalculateNetwork.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		52DA1658249AAC7F005EDC81 /* Images */ = {
@@ -236,6 +219,11 @@
 		52DA1687249ADA57005EDC81 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5298827D249B5EFC00CECBD0 /* EndPointType.swift */,
+				5298827A249B5EFC00CECBD0 /* HTTPMethod.swift */,
+				5298827B249B5EFC00CECBD0 /* HTTPTask.swift */,
+				5298827E249B5EFD00CECBD0 /* NetworkEnvironment.swift */,
+				5298827C249B5EFC00CECBD0 /* Router.swift */,
 				52DA1688249ADA57005EDC81 /* NetworkManager.swift */,
 				52DA1689249ADA57005EDC81 /* ApiEndPoint.swift */,
 			);
@@ -307,7 +295,6 @@
 				52DA1633249AA8D6005EDC81 /* Sources */,
 				52DA1634249AA8D6005EDC81 /* Frameworks */,
 				52DA1635249AA8D6005EDC81 /* Resources */,
-				52DA1653249AA93C005EDC81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,12 +362,15 @@
 			files = (
 				52DFFCBD249B04A500D56AD6 /* SearchFlightsViewController.swift in Sources */,
 				52DA1673249AAF05005EDC81 /* FormViewController.swift in Sources */,
+				52988283249B5EFD00CECBD0 /* NetworkEnvironment.swift in Sources */,
 				52DA168D249ADA57005EDC81 /* ApiEndPoint.swift in Sources */,
 				52DA1677249AB1A6005EDC81 /* ItemWithLabelAndTextField.swift in Sources */,
+				52988281249B5EFD00CECBD0 /* Router.swift in Sources */,
 				52DA166B249AAE07005EDC81 /* UITextField+Extension.swift in Sources */,
 				52DA1690249ADDCF005EDC81 /* Warning.swift in Sources */,
 				52DA1670249AAE57005EDC81 /* Constants.swift in Sources */,
 				52DA168C249ADA57005EDC81 /* NetworkManager.swift in Sources */,
+				5298827F249B5EFD00CECBD0 /* HTTPMethod.swift in Sources */,
 				52DA1668249AAE07005EDC81 /* UIView+Extension.swift in Sources */,
 				52DA163F249AA8D6005EDC81 /* ViewController.swift in Sources */,
 				52DA1684249AD9AC005EDC81 /* Station.swift in Sources */,
@@ -390,6 +380,8 @@
 				52DA163B249AA8D6005EDC81 /* AppDelegate.swift in Sources */,
 				52DA1682249AD998005EDC81 /* StationResult.swift in Sources */,
 				52DA1657249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift in Sources */,
+				52988280249B5EFD00CECBD0 /* HTTPTask.swift in Sources */,
+				52988282249B5EFD00CECBD0 /* EndPointType.swift in Sources */,
 				52DA1666249AAE07005EDC81 /* UIColor+Extension.swift in Sources */,
 				52DFFCB9249AFC0800D56AD6 /* FlightsResult.swift in Sources */,
 				52DFFCB7249AF28000D56AD6 /* FlightInput.swift in Sources */,

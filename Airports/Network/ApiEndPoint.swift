@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import iOSCalculateNetwork
 
 // serviços consultados
 enum ApiEndPoint{
