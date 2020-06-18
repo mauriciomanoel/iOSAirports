@@ -84,8 +84,6 @@ class FormViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
                     _self.present(alert, animated: true)
                 }
-                
-                
             }
         }
         
@@ -112,6 +110,8 @@ class FormViewController: UIViewController {
             }
         }
         
+        mainView.updateData()
+        
         
     }
     
@@ -122,8 +122,6 @@ class FormViewController: UIViewController {
                 destinationVC.flightsResult = viewModel.flightsResult
             }
         }
-        
-        print("prepare")
     }
     
     

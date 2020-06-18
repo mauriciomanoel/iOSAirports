@@ -5,7 +5,7 @@ import UIKit
 public class ItemWithLabelAndTextField: UIView {
 
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var valueTextField: UITextField!
+    @IBOutlet weak var valueTextField: CustomSearchTextField!
     
     private var hintPeriod:String = "Year"
     private var lastValueTextField = ""
@@ -52,25 +52,4 @@ public class ItemWithLabelAndTextField: UIView {
         }
     }
     
-          
-    @IBAction func valueEditingBegin(_ sender: UITextField) {
-//        if let valueString = sender.text {
-//            self.currentValueTextField = valueString
-//        }
-    }
-    
-     @IBAction func valueChangedCurrencyTextField(_ sender: UITextField) {
-//         DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [unowned self] in
-//            if (self.lastValueTextField == sender.text) {return}
-//            self.lastValueTextField = sender.text ?? ""
-//
-//            if let valueString = sender.text {
-//                self.listenerValue = valueString
-//            }
-//         }
-     }
-    
-    @IBAction func editingDidEnd(_ sender: Any) {
-        
-    }
 }

@@ -39,8 +39,12 @@ class FormView: UIView {
         
         departureDateIn.setupDropdownDateSpinner()
         departureDateOut.setupDropdownDateSpinner()
-
-
+                
+    }
+    
+    func updateData() {
+        originStation.valueTextField.addData()
+        destinationStation.valueTextField.addData()
     }
     
     func showLoading() {
@@ -65,7 +69,6 @@ class FormView: UIView {
     
     @IBAction func onClickSearch(_ sender: Any) {
         
-
         let destination = self.destinationStation.valueTextField.text
         let originStation = self.originStation.valueTextField.text
         let dateout = self.departureDateOut.dataTextField.text
@@ -81,7 +84,6 @@ class FormView: UIView {
         guard let _chd = chd else { return }
         
         var flightInput = FlightInput(destination: _destination, origin: _originStation, dateout: _dateout, adt: _adt, teen: _teens, chd: _chd)
-        print(flightInput)
         self.flightInputData = flightInput
     }
     

@@ -12,6 +12,7 @@ class FormViewModel {
 
     let repository : AirportsRepository
     var flightsResult: FlightsResult?
+    var countries : [Countries] = []
 
     var isLoadingClosure : ((Bool)->())?
     private var isLoading: Bool = false {
@@ -114,6 +115,15 @@ class FormViewModel {
     }
     
     private func processStations(data: StationResult) {
+
+        countries.removeAll()
+        
+        for station in data.stations {
+            let country = Countries(countryCode: station.countryCode, countryName: station.countryName, stationCode: station.code, stationName: station.name)
+            countries.append(country)
+        }
+        
+        AppController.countriesList = countries
         loadParametersData = true
 
     }
@@ -124,16 +134,18 @@ class FormViewModel {
         
         if (flightInput.origin.count == 0) {
             self.errorMessageData = "Origin field is null or invalid"
+            return
         }
         
         if (flightInput.destination.count == 0) {
             self.errorMessageData = "Destination field is null or invalid"
+             return
         }
         
-        if (flightInput.dateout.count == 0) {
+        if (flightInput.dateout.count < 10) {
             self.errorMessageData = "Date Output field is null or invalid"
+            return
         }
-        
         
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "MM/dd/yyyy"
@@ -143,8 +155,20 @@ class FormViewModel {
 
         let date = dateFormatterGet.date(from: flightInput.dateout)
         flightInput.dateout = dateFormatterPrint.string(from: date!)
-
-        print(flightInput)
+        
+        if let i = countries.firstIndex(where: { $0.getStringText() == data.origin }) {
+            flightInput.origin = countries[i].stationCode
+        } else {
+            self.errorMessageData = "Origin field is null or invalid"
+            return
+        }
+        
+        if let i = countries.firstIndex(where: { $0.getStringText() == data.destination }) {
+            flightInput.destination = countries[i].stationCode
+        } else {
+            self.errorMessageData = "Destination field is null or invalid"
+            return
+        }
         
         self.repository.searchFlights(flightInput) { (data, error) in
             self.isLoading = false

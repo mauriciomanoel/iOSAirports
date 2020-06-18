@@ -27,18 +27,13 @@
                     <color key="textColor" red="0.1658097208" green="0.49261528249999997" blue="0.88304609060000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Z5-qz-MBF">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Z5-qz-MBF" customClass="CustomSearchTextField" customModule="Airports" customModuleProvider="target">
                     <rect key="frame" x="10" y="31" width="394" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="Nyk-hM-4Xk"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="editingDidEnd:" destination="-1" eventType="editingDidEnd" id="EYb-9O-hdP"/>
-                        <action selector="valueChangedCurrencyTextField:" destination="-1" eventType="editingChanged" id="Wzx-jY-nIp"/>
-                        <action selector="valueEditingBegin:" destination="-1" eventType="editingDidBegin" id="9eC-Tc-5fe"/>
-                    </connections>
                 </textField>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
