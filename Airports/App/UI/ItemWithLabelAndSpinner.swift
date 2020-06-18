@@ -21,7 +21,7 @@ public class ItemWithLabelAndSpinner: UIView {
     public var dataSelectedClosure: ((Int)->())?
     var valueSelectRowData: Int = 0
     var mData: [String] = []
-    var barTintColor = UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1.0)
+    var barTintColor = UIColor(red: 7/255, green: 53/255, blue: 144/255, alpha: 1.0)
     
     override init(frame aFrame: CGRect) {
         super.init(frame: aFrame)
@@ -92,10 +92,12 @@ public class ItemWithLabelAndSpinner: UIView {
         //Formate Date
         datePicker.datePickerMode = .date
 
-            //ToolBar
+       //ToolBar
        let toolbar = UIToolbar();
+       toolbar.barStyle = .default
+       toolbar.tintColor = UIColor.white
        toolbar.sizeToFit()
-
+       toolbar.barTintColor = barTintColor
        toolbar.setItems([cancelar, espaco, ok], animated: false)
 
         // add toolbar to textField
@@ -124,7 +126,7 @@ public class ItemWithLabelAndSpinner: UIView {
     
     public func updateImages() {
         let resourcePath = Bundle.main.resourcePath!
-        let image = UIImage(contentsOfFile: URL(fileURLWithPath: resourcePath).appendingPathComponent("ic_calculate_arrow_down.png").path)
+        let image = UIImage(contentsOfFile: URL(fileURLWithPath: resourcePath).appendingPathComponent("ic_arrow_down.png").path)
         if let _image = image {
             arrowImageView.image = _image
         }

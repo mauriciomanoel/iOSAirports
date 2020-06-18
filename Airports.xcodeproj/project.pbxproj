@@ -24,7 +24,7 @@
 		52DA1647249AA8DC005EDC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA1645249AA8DC005EDC81 /* LaunchScreen.storyboard */; };
 		52DA1656249AAC4E005EDC81 /* ItemWithLabelAndSpinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DA1654249AAC4D005EDC81 /* ItemWithLabelAndSpinner.xib */; };
 		52DA1657249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA1655249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift */; };
-		52DA165E249AAC7F005EDC81 /* ic_calculate_arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DA165B249AAC7F005EDC81 /* ic_calculate_arrow_down.png */; };
+		52DA165E249AAC7F005EDC81 /* ic_arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DA165B249AAC7F005EDC81 /* ic_arrow_down.png */; };
 		52DA1666249AAE07005EDC81 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA1660249AAE07005EDC81 /* UIColor+Extension.swift */; };
 		52DA1668249AAE07005EDC81 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA1662249AAE07005EDC81 /* UIView+Extension.swift */; };
 		52DA166B249AAE07005EDC81 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA1665249AAE07005EDC81 /* UITextField+Extension.swift */; };
@@ -70,7 +70,7 @@
 		52DA1648249AA8DC005EDC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DA1654249AAC4D005EDC81 /* ItemWithLabelAndSpinner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemWithLabelAndSpinner.xib; sourceTree = "<group>"; };
 		52DA1655249AAC4E005EDC81 /* ItemWithLabelAndSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemWithLabelAndSpinner.swift; sourceTree = "<group>"; };
-		52DA165B249AAC7F005EDC81 /* ic_calculate_arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_calculate_arrow_down.png; sourceTree = "<group>"; };
+		52DA165B249AAC7F005EDC81 /* ic_arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_arrow_down.png; sourceTree = "<group>"; };
 		52DA1660249AAE07005EDC81 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		52DA1662249AAE07005EDC81 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		52DA1665249AAE07005EDC81 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		52DA1658249AAC7F005EDC81 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				52DA165B249AAC7F005EDC81 /* ic_calculate_arrow_down.png */,
+				52DA165B249AAC7F005EDC81 /* ic_arrow_down.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -175,7 +175,6 @@
 			children = (
 				52DA166F249AAE57005EDC81 /* Constants.swift */,
 				52DA168F249ADDCF005EDC81 /* Warning.swift */,
-				52DA166D249AAE3F005EDC81 /* PickerViewUtils.swift */,
 				5298828F249B910900CECBD0 /* Resources.swift */,
 			);
 			path = Helpers;
@@ -221,6 +220,7 @@
 		52DA167F249AD94E005EDC81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52DA166D249AAE3F005EDC81 /* PickerViewUtils.swift */,
 				5298828C249B811500CECBD0 /* Country */,
 				52DFFCB5249AF26400D56AD6 /* Flight */,
 				52DA1680249AD976005EDC81 /* Station */,
@@ -371,7 +371,7 @@
 				52DA1647249AA8DC005EDC81 /* LaunchScreen.storyboard in Resources */,
 				52DA1644249AA8DC005EDC81 /* Assets.xcassets in Resources */,
 				52DFFCC6249B102E00D56AD6 /* TripTableViewCell.xib in Resources */,
-				52DA165E249AAC7F005EDC81 /* ic_calculate_arrow_down.png in Resources */,
+				52DA165E249AAC7F005EDC81 /* ic_arrow_down.png in Resources */,
 				52DA1642249AA8D6005EDC81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
