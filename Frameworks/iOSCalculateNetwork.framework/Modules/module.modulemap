@@ -1,0 +1,11 @@
+framework module iOSCalculateNetwork {
+  umbrella header "iOSCalculateNetwork.h"
+
+  export *
+  module * { export * }
+}
+
+module iOSCalculateNetwork.Swift {
+    header "iOSCalculateNetwork-Swift.h"
+    requires objc
+}
