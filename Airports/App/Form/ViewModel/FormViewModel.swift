@@ -181,6 +181,7 @@ class FormViewModel {
 
                     guard let _flightsResult = flightsResult else {
                         print("ERROR")
+                        self.errorMessageData = Warning.error.rawValue
                         return
                     }
                     
