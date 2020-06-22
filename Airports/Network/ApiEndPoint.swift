@@ -38,7 +38,7 @@ extension ApiEndPoint : EndPointType{
         var url = URL(string: environmentBaseURL)
         switch self {
             case .getStations: url = URL(string: "https://tripstest.ryanair.com/static/stations.json")
-            case .searchFlights: url = URL(string: "https://sit-nativeapps.ryanair.com/api/v4/Availability")
+            case .searchFlights: url = URL(string: "https://tripstest.ryanair.com/api/v4/Availability")
         }
         
         if let url = url {
