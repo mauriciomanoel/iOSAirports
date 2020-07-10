@@ -1,5 +1,5 @@
 //
-//  PickerViewCalculateUtils.swift
+//  ExtensionUITextField.swift
 //  Airports
 //
 //  Created by Mauricio on 6/17/20.
@@ -11,10 +11,9 @@ import UIKit
 
 public class PickerViewUtils : UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate, UIToolbarDelegate {
     
-    var pickerData : [String] = []
+    var pickerData : [String]!
     var pickerTextField : UITextField!
     var selectRowPicker: ((Int)->())?
-    let datePicker = UIDatePicker()
         
     init(pickerData: [String], barButtonItems: [UIBarButtonItem], dropdownField: UITextField, onSelect: ((Int)->())?, barTintColor: UIColor) {
         super.init(frame: CGRect.zero)
